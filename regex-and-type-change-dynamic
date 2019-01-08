@@ -1,0 +1,15 @@
+<input
+          type="text"
+          [ngStyle]="{ border: errorMessage ? '1px solid red' : '' }"
+          formControlName="searchInput"
+          class="form-control"
+          placeholder="Enter a company number"
+          
+          onfocus="(this.type='number')" onblur="(this.type='text')"
+          
+          required
+        />
+        
+        searchCompForm = this.fb.group({
+    searchInput: ["", [Validators.required,  Validators.pattern("^[0-9]*$")]]
+  });
