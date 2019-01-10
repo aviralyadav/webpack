@@ -13,3 +13,17 @@
         searchCompForm = this.fb.group({
     searchInput: ["", [Validators.required,  Validators.pattern("^[0-9]*$")]]
   });
+
+
+<input
+          type="text"
+          [ngStyle]="{ border: errorMessage ? '1px solid red' : '' }"
+          formControlName="searchInput"
+          class="form-control"
+          placeholder="Enter a company number"
+          onfocus="(this.type='number')" onblur="(this.type='text')"
+          (input)="hideError()"
+          inputmode="numeric"
+          onkeydown="javascript: return event.keyCode == 69 ? false : true"  ///// for restricting e in typing in type number 
+          required
+        />
