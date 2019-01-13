@@ -1,0 +1,1 @@
+ArrayList.forEach(item => item.name = 'a'+item.name)
