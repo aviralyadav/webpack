@@ -1,0 +1,7 @@
+uniqueValues(arr) {
+    const unique = (value, index, self) => {
+      return self.indexOf(value) === index;
+    };
+    const componentIdValues = arr.split("null,")[1];
+    return componentIdValues.split(",").filter(unique);
+  }
