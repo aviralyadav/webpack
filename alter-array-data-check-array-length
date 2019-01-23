@@ -1,0 +1,2 @@
+ArrayList.forEach(item => item.name = 'a'+item.name)
+<div class="row" *ngIf="teamMembers?.length > 0"> teamMembers is an array
