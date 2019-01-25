@@ -5,3 +5,8 @@ uniqueValues(arr) {
     const componentIdValues = arr.split("null,")[1];
     return componentIdValues.split(",").filter(unique);
   }
+
+
+const filtered = this.resultObjPSE.map(item => item.AlertId)
+                .filter((value, index, self) => self.indexOf(value) === index);
+                console.log(filtered);
