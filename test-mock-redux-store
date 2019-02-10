@@ -1,0 +1,8 @@
+https://blog.theodo.fr/2017/04/enzyme-fast-and-simple-react-testing/
+
+import configureStore from 'redux-mock-store';
+const mockStore = configureStore();
+const dispatch = sinon.spy();
+
+
+const wrapper = mount(<App store={mockStore({ runtime: {} })} />);
