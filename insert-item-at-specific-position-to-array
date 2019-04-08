@@ -1,0 +1,6 @@
+// The original array
+var array = ["one", "two", "four"];
+// splice(position, numberOfItemsToRemove, item)
+array.splice(2, 0, "three");
+
+array;  // ["one", "two", "three", "four"]
